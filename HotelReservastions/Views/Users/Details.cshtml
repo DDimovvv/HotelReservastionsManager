@@ -1,4 +1,4 @@
-﻿@model HotelReservastionsManager.Models.User
+﻿@model HotelReservationsManager.Models.User
 
 @{
     ViewData["Title"] = "User Details";
@@ -6,9 +6,8 @@
 
 <h1>User Details</h1>
 
-<div>
-    <hr />
-    <dl class="row">
+<div class="hm-card">
+    <dl class="row mb-0">
         <dt class="col-sm-3">@Html.DisplayNameFor(model => model.EGN)</dt>
         <dd class="col-sm-9">@Html.DisplayFor(model => model.EGN)</dd>
 
@@ -21,6 +20,15 @@
         <dt class="col-sm-3">@Html.DisplayNameFor(model => model.LastName)</dt>
         <dd class="col-sm-9">@Html.DisplayFor(model => model.LastName)</dd>
 
+        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.UserName)</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.UserName)</dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Email)</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
         <dt class="col-sm-3">@Html.DisplayNameFor(model => model.HireDate)</dt>
         <dd class="col-sm-9">@Html.DisplayFor(model => model.HireDate)</dd>
 
@@ -29,24 +37,13 @@
 
         <dt class="col-sm-3">@Html.DisplayNameFor(model => model.ReleaseDate)</dt>
         <dd class="col-sm-9">@Html.DisplayFor(model => model.ReleaseDate)</dd>
-
-        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Email)</dt>
-        <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
-
-        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
-        <dd class="col-sm-9">@Html.DisplayFor(model => model.PhoneNumber)</dd>
-
-        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.UserName)</dt>
-        <dd class="col-sm-9">@Html.DisplayFor(model => model.UserName)</dd>
     </dl>
 </div>
-<div>
+
+<div class="d-flex gap-2">
     @if (Model.Email != "admin@hotelreservations.com")
     {
         <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
-        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
     }
-    else{
-		<a asp-action="Index" class="btn btn-secondary">Back to List</a>
-    }
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 </div>

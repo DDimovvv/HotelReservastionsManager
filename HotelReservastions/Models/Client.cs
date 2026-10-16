@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace HotelReservastionsManager.Models
+namespace HotelReservationsManager.Models
 {
     public class Client
     {
@@ -8,12 +8,15 @@ namespace HotelReservastionsManager.Models
         public int ClientId { get; set; }
         [Required]
         [StringLength(50)]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
         [Required]
         [StringLength(50)]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
         [Required]
         [StringLength(10, MinimumLength = 10)]
+        [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
         [Required]
         [EmailAddress]

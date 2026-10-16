@@ -1,7 +1,34 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to Hotel Reservations Manager</h1>
-</div>
+<section class="hm-hero">
+    <h1>Reservations, rooms and guests in one place</h1>
+    <p>Create bookings, check which rooms are free and keep guest details up to date.</p>
+    <div class="hm-hero-actions">
+        <a class="btn btn-brass btn-lg" asp-controller="Reservations" asp-action="Create">New reservation</a>
+        <a class="btn btn-outline-light-soft btn-lg" asp-controller="Clients" asp-action="Create">New client</a>
+    </div>
+</section>
+
+<section class="hm-tiles">
+    <a class="hm-tile" asp-controller="Reservations" asp-action="Index">
+        <h2>Reservations</h2>
+        <p>See all bookings, edit dates and meal options.</p>
+    </a>
+    <a class="hm-tile" asp-controller="Rooms" asp-action="Index">
+        <h2>Rooms</h2>
+        <p>Browse room types, capacity and prices.</p>
+    </a>
+    <a class="hm-tile" asp-controller="Clients" asp-action="Index">
+        <h2>Clients</h2>
+        <p>Find guests and their contact details.</p>
+    </a>
+    @if (User.IsInRole("Admin"))
+    {
+        <a class="hm-tile" asp-controller="Users" asp-action="Index">
+            <h2>Users</h2>
+            <p>Manage employee accounts and roles.</p>
+        </a>
+    }
+</section>

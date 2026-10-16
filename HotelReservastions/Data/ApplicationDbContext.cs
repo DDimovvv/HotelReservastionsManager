@@ -1,8 +1,8 @@
-﻿using HotelReservastionsManager.Models;
+﻿using HotelReservationsManager.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotelReservastionsManager.Data
+namespace HotelReservationsManager.Data
 {
     public class ApplicationDbContext: IdentityDbContext<User>
     {

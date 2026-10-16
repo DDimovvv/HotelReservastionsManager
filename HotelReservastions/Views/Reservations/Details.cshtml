@@ -1,4 +1,4 @@
-﻿@model HotelReservastionsManager.Models.Reservation
+﻿@model HotelReservationsManager.Models.Reservation
 
 @{
     ViewData["Title"] = "Details";
@@ -89,6 +89,6 @@
     }
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.ReservationId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.ReservationId" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 </div>

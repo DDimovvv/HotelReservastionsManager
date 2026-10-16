@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using HotelReservastionsManager.Data;
-using HotelReservastionsManager.Models;
+using HotelReservationsManager.Data;
+using HotelReservationsManager.Models;
 using Microsoft.AspNetCore.Authorization;
 
-namespace HotelReservastionsManager.Controllers
+namespace HotelReservationsManager.Controllers
 {
     public class RoomsController : Controller
     {

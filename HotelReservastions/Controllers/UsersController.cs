@@ -3,12 +3,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using HotelReservastionsManager.Models;
-using HotelReservastionsManager.Data;
+using HotelReservationsManager.Models;
+using HotelReservationsManager.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
 
-namespace HotelReservastionsManager.Controllers
+namespace HotelReservationsManager.Controllers
 {
     [Authorize(Roles = "Admin")]
     public class UsersController : Controller

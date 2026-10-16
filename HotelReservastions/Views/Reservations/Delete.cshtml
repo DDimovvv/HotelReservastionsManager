@@ -1,4 +1,4 @@
-﻿@model HotelReservastionsManager.Models.Reservation
+﻿@model HotelReservationsManager.Models.Reservation
 
 @{
     ViewData["Title"] = "Delete";
@@ -57,7 +57,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="ReservationId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
     </form>
 </div>

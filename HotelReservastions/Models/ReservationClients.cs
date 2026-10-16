@@ -1,4 +1,4 @@
-﻿namespace HotelReservastionsManager.Models
+﻿namespace HotelReservationsManager.Models
 {
     public class ReservationClients
     {

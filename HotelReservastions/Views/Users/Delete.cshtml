@@ -1,4 +1,4 @@
-﻿@model HotelReservastionsManager.Models.User
+﻿@model HotelReservationsManager.Models.User
 
 @{
     ViewData["Title"] = "Delete User";
@@ -6,10 +6,10 @@
 
 <h1>Delete User</h1>
 
-<h3 class="text-danger">Are you sure you want to delete this user?</h3>
-<div>
-    <hr />
-    <dl class="row">
+<h5 class="text-danger mb-3">Are you sure you want to delete this user?</h5>
+
+<div class="hm-card">
+    <dl class="row mb-0">
         <dt class="col-sm-3">@Html.DisplayNameFor(model => model.EGN)</dt>
         <dd class="col-sm-9">@Html.DisplayFor(model => model.EGN)</dd>
 
@@ -34,10 +34,10 @@
         <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Email)</dt>
         <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
     </dl>
-
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" />
-        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
-    </form>
 </div>
+
+<form asp-action="Delete" class="d-flex gap-2">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Delete" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>

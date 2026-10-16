@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace HotelReservastionsManager.Migrations
+namespace HotelReservationsManager.Migrations
 {
     /// <inheritdoc />
     public partial class initial : Migration

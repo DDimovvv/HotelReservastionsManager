@@ -5,13 +5,13 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using HotelReservastionsManager.Models;
+using HotelReservationsManager.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace HotelReservastionsManager.Areas.Identity.Pages.Account
+namespace HotelReservationsManager.Areas.Identity.Pages.Account
 {
     public class LogoutModel : PageModel
     {

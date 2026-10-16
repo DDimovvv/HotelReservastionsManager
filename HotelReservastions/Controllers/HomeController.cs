@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using HotelReservastionsManager.Models;
+using HotelReservationsManager.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HotelReservastionsManager.Controllers
+namespace HotelReservationsManager.Controllers
 {
     public class HomeController : Controller
     {
